@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Shrink</title>
+</head>
+<body>
+    <h1>flex-shrink: 1;</h1>
+    <section class="container">
+        <div class="item shrink-1">1</div> 
+        <div class="item shrink-1">2</div>
+        <div class="item shrink-1">3</div>
+        <div class="item shrink-1">4</div>
+    </section>
+
+    <h1>flex-shrink: 1; // Different content</h1>
+    <section class="container">
+        <div class="item shrink-1">1</div>
+        <div class="item shrink-1">NTest 2</div>
+        <div class="item shrink-1">Hi 3</div>
+        <div class="item shrink-1">4</div>
+    </section>
+
+    <h1>flex-shrink: mixed; // Different Content</h1>
+    <section class="container">
+        <div class="item shrink-1">1</div>
+        <div class="item shrink-1">NTest 2</div>
+        <div class="item shrink-3">Hi 3</div>
+        <div class="item shrink-3">4</div>
+    </section>
+
+    <h1>flex-shrink: 1; // Content bigger than container</h1>
+    <section class="container">
+        <div class="item shrink-1">TestTestTestTest</div>
+        <div class="item shrink-1">TestTestTest 2</div>
+        <div class="item shrink-1">Hi 3</div>
+        <div class="item shrink-1">4</div>
+    </section>
+
+    <h1>flex-shrink: mixed; // Content bigger than container</h1>
+    <section class="container">
+        <div class="item shrink-1">TestTestTestTest</div>
+        <div class="item shrink-1">TestTestTest 2</div>
+        <div class="item shrink-3">Hi 3</div>
+        <div class="item shrink-3">4</div>
+    </section>
+
+    <h1>flex-shrink: 1; / flex-basis: value;</h1>
+    <section class="container">
+        <div class="item shrink-1-basis">TestTestTestTest</div>
+        <div class="item shrink-1-basis">TestTestTest 2</div>
+        <div class="item shrink-1-basis">Hi 3</div>
+        <div class="item shrink-1-basis">4</div>
+    </section>
+
+    <h1>flex-shrink: 0; / flex-basis: value;</h1>
+    <section class="container">
+        <div class="item shrink-0-basis">TestTestTestTest</div>
+        <div class="item shrink-0-basis">TestTestTest 2</div>
+        <div class="item shrink-0-basis">Hi 3</div>
+        <div class="item shrink-0-basis">4</div>
+    </section>
+
+    <h1>flex-shrink: 0; / flex-basis: value; / wrap</h1>
+    <section class="container flex-wrap">
+        <div class="item shrink-0-basis">TestTestTestTest</div>
+        <div class="item shrink-0-basis">TestTestTest 2</div>
+        <div class="item shrink-0-basis">Hi 3</div>
+        <div class="item shrink-0-basis">4</div>
+    </section>
+
+    <h1>flex-shrink: mixed; / flex-basis: value;</h1>
+    <section class="container">
+        <div class="item shrink-1-basis">1</div>
+        <div class="item shrink-1-basis">Test 2</div>
+        <div class="item shrink-3-basis">3</div>
+        <div class="item shrink-3-basis">4</div>
+    </section>
+
+    <h1>flex-shrink: mixed; / flex-basis: value; / wrap</h1>
+    <section class="container flex-wrap">
+        <div class="item shrink-1-basis">1</div>
+        <div class="item shrink-1-basis">Test 2</div>
+        <div class="item shrink-3-basis">3</div>
+        <div class="item shrink-3-basis">4</div>
+    </section>
+    </body>
+</html>
