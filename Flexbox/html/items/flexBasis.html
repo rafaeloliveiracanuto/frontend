@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Basis</title>
+</head>
+<body>
+    <h1>flex-basis: auto;</h1>
+    <section class="container">
+        <div class="item basis-auto">TheWord 1</div>
+        <div class="item basis-auto">2</div>
+        <div class="item basis-auto-grow-2">3</div>
+        <div class="item basis-auto-width">4</div>
+        <div class="item basis-auto-grow-0">5</div>
+    </section>
+
+    <section class="container overlay">
+        <div class="item basis-auto">TheWord 1</div>
+        <div class="item basis-auto">2</div>
+        <div class="item basis-auto-grow-2">3</div>
+        <div class="item basis-auto-width">4</div>
+        <div class="item basis-auto-grow-0">5</div>
+    </section>
+
+    <h1>flex-basis: 0;</h1>
+    <section class="container">
+        <div class="item basis-0">Testing Testing</div>
+        <div class="item basis-0">2</div>
+        <div class="item basis-0-grow-2">TheWord</div>
+        <div class="item basis-0-width">4</div>
+        <div class="item basis-0-grow-0">5</div>
+    </section>
+
+    <section class="container overlay">
+        <div class="item basis-0">Testing Testing</div>
+        <div class="item basis-0">2</div>
+        <div class="item basis-0-grow-2">TheWord</div>
+        <div class="item basis-0-width">4</div>
+        <div class="item basis-0-grow-0">5</div>
+    </section>
+
+    <h1>flex-basis: number;</h1>
+    <section class="container basis-number-container">
+        <div class="item basis-110">1</div>
+        <div class="item basis-110">12</div>
+        <div class="item basis-110">12345678910</div>
+        <div class="item basis-300">1234</div>
+        <div class="item basis-110-percentage">1</div>
+        <div class="item basis-110-percentage">12</div>
+        <div class="item basis-110-percentage">123</div>
+        <div class="item basis-110-percentage">1234</div>
+    </section>
+
+    <h1>flex-basis: number; // Different content</h1>
+    <section class="container basis-number-container">
+        <div class="item basis-110">Large Content</div>
+        <div class="item basis-110">HigherWord</div>
+        <div class="item basis-110">Hi</div>
+    </section>
+
+    <h1>flex-basis: number; // grow 1</h1>
+    <section class="container basis-number-container">
+        <div class="item basis-110-grow-1">1</div>
+        <div class="item basis-110-grow-1">12</div>
+        <div class="item basis-110-grow-1">1234</div>
+        <div class="item basis-110-grow-1">12345</div>
+        <div class="item basis-600-grow-1">5</div>
+    </section>
+</body>
+</html>
